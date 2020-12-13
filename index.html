@@ -1,0 +1,126 @@
+<!--doctype html-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://vjs.zencdn.net/6.2.0/video-js.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/videojs-resolution-switcher/0.4.2/videojs-resolution-switcher.min.css"  />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-watermark@2.0.0/dist/videojs-watermark.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-share@2.0.1/dist/videojs-share.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-social-share-overlay@0.0.7/dist/videojs-social-share-overlay.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/videojs-overlay/1.1.4/videojs-overlay.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/videojs-contextmenu-ui@5.1.0/dist/videojs-contextmenu-ui.css"/>
+<style>
+.vjs-volume-menu-button .vjs-menu-content {
+    transform: rotate(-90deg);
+    margin-bottom: 35px !important;
+}
+
+.video-js .vjs-loading-spinner {border-color: #ffca47
+}.video-js{font-size:10px;color:rgba(255, 202, 71, 1.0)}.vjs-emiliosalas-skin .vjs-big-play-button{font-size:2.5em;line-height:2.5em;height:2.6em;width:2.8em;border:.06666em solid #fff;border-radius:50%;left:50%;top:50%;margin-left:-1.40em;margin-top:-1.30em}
+
+.video-js .vjs-play-progress {
+  background-color: #ffffff; }
+  .video-js .vjs-play-progress:before {
+    font-size: 1.1em;
+    position: absolute;
+    right: -0.5em;
+    top: -0.333333333333333em;
+    z-index: 1; }
+
+.vjs-resolution-button{color:#ccc;font-family:VideoJS}.vjs-resolution-button .vjs-resolution-button-staticlabel:before{content:'\f110';font-size:1.8em;line-height:1.67}
+
+.vjs-icon-share {
+  font-family: VideoJS;
+  font-weight: normal;
+  font-style: normal; }
+  .vjs-icon-share:before {
+    content: "\f10f"; }
+
+.vjs-resolution-button{color:#ffca47;font-family:VideoJS}
+
+.video-js.vjs-videojs-share_open .vjs-modal-dialog .vjs-close-button{position:absolute;right:0;top:5px;width:30px;height:30px;color:#ff0045;cursor:pointer;opacity:1.0;transition:opacity 0.25s ease-out}.video-js.vjs-videojs-share_open .vjs-modal-dialog .vjs-close-button:before{content:'×';font-size:20px;line-height:15px;color:#fff}
+.video-js .vjs-share__title{align-self:center;font-size:14px;color:#ff0045}.video-js .vjs-share__subtitle{width:100%;margin:0 auto 12px;font-size:11px;color:#fff;opacity:0.7}.video-js .vjs-share__short-link-wrapper{position:relative;display:block;width:100%;height:40px;margin:0 auto;margin-bottom:11px;border:0;color:rgba(255,255,255,0.65);background-color:#363636;outline:none;overflow:hidden;flex-shrink:0}.video-js .vjs-share__btn{position:absolute;right:0;bottom:0;height:40px;width:40px;display:flex;align-items:center;padding:px;border:0;color:#fff;background-color:#2e2e2e;background-size:18px 19px;background-position:center;background-repeat:no-repeat;cursor:pointer;outline:none;transition:width 0.3s ease-out, padding 0.3s ease-out}.video-js .vjs-share__btn svg{flex-shrink:0}.video-js .vjs-share__btn span{position:relative;padding-left:10px;opacity:0;transition:opacity 0.3s ease-out}.video-js .vjs-share__social{display:flex;justify-content:center;align-items:center;flex-shrink:0;width:30px;height:30px;margin-right:6px;margin-bottom:1px;cursor:pointer;font-size:8px;transition:transform 0.3s ease-out, filter 0.2s ease-out;border:none;outline:none}.video-js .vjs-share__social:hover{filter:brightness(115%)}.video-js .vjs-share__social svg{width:100%;max-height:14px}.video-js .vjs-share__social_mail{background-color:#ff0048}.video-js .vjs-share__social_tw{background-color:#000000}.video-js .vjs-share__social_reddit{background-color:#ff4500}.video-js .vjs-share__social_fbFeed{background-color:#ffca47}.video-js .vjs-share__social_messenger{background-color:#000000}.video-js .vjs-share__social_gp{background-color:#ffca47}.video-js .vjs-share__social_telegram{background-color:#ffca47}.video-js .vjs-share__social_whatsapp{background-color:#000000}
+div.video-js .vjs-overlay {
+ font-size: 10px;
+  width: auto;
+  height: auto;
+  background: rgba(0,0,0,0.3);
+}
+.vjs-contextmenu-ui-menu{position:absolute}.vjs-contextmenu-ui-menu .vjs-menu-content{background-color:#2b333f;background-color:rgba(0,0,0,0.7);border-radius:.3em;padding:.25em}
+</style>
+</head>
+<body>
+<video 
+id="emiliosalas_player" 
+class="video-js vjs-emiliosalas-skin vjs-fluid" 
+controls autoplay="true" 
+preload="auto" 
+width="100%" 
+height="100%"
+poster="" 
+data-setup='{"fluid": true,"aspectRatio":"16:9" }'>
+<source src="https://dl.dropboxusercontent.com/s/dge3r7z9wmx2hpj/cosmos_original.mp4" type='video/mp4'label='720p'>
+<source src="https://dl.dropboxusercontent.com/s/dge3r7z9wmx2hpj/cosmos_original.mp4" type='video/mp4' label='480p' />
+<source src="https://dl.dropboxusercontent.com/s/dge3r7z9wmx2hpj/cosmos_original.mp4" type='video/mp4' label='360p'/>
+<track kind="captions" src="https://dl.dropboxusercontent.com/s/vdc9s3pzv6hwpwe/testplayer.vtt" srclang="en" label="English" default>
+</video>
+<script src="https://vjs.zencdn.net/6.2.0/video.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-resolution-switcher/0.4.2/videojs-resolution-switcher.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-watermark@2.0.0/dist/videojs-watermark.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.0/Youtube.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-share@2.0.1/dist/videojs-share.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-overlay/1.1.4/videojs-overlay.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/videojs-contextmenu-ui@5.1.0/dist/videojs-contextmenu-ui.js"></script>
+
+<script>
+videojs('emiliosalas_player').videoJsResolutionSwitcher()
+
+   var player = videojs('emiliosalas_player');
+  // initialize the plugin
+
+   var shareOptions = {
+  socials: ['fbFeed', 'tw', "gp", 'messenger', 'telegram', 'whatsapp' ],
+ 
+  url: window.location.href,
+  title: 'VideoJS Project',
+  description: 'Emilio Salas',
+  image: '',
+  
+  // required for Facebook and Messenger
+  fbAppId: '12345',
+  // optional for Facebook
+  redirectUri: window.location.href + '#close',
+ 
+  // optional for VK
+  isVkParse: true,
+} 
+player.share(shareOptions);
+
+(function(window, videojs) {
+      var player = window.player = videojs('emiliosalas_player');
+      player.watermark({
+        image: 'favicon-32x32.png' ,
+        url: 'https://camverse09.blogspot.com'
+      });
+    }(window, window.videojs));
+
+
+(function(window, videojs) {
+      var player = window.player = videojs('emiliosalas_player');
+
+      player.contextmenuUI({
+        content: [{
+          href: 'https://camverse09.blogspot.com',
+          label: 'Camverse Officials'
+        }, {
+          label: 'My Video JS Project ✅',
+          listener: function() {
+            alert('you clicked the example link!');
+          }
+        }]
+      });
+    }(window, window.videojs));
+</script>
+</body>
+</html>
